@@ -283,6 +283,53 @@ h3 {
   font-weight: 500;
 }
 
+/* Footer Styles */
+footer {
+  background-color: var(--color-nude-bg);
+  border-top: 1px solid var(--color-border);
+}
+
+footer h5 {
+  color: var(--color-green-dark);
+  font-family: var(--primary-font);
+}
+
+footer h6 {
+  color: var(--color-green-dark);
+  font-family: var(--primary-font);
+  font-weight: 600;
+}
+
+footer a {
+  transition: all 0.3s ease;
+  color: var(--color-text-muted);
+}
+
+footer a:hover {
+  color: var(--color-green);
+  transform: translateY(-2px);
+}
+
+footer .bi-facebook:hover {
+  color: #1877f2;
+}
+
+footer .bi-instagram:hover {
+  color: #e4405f;
+}
+
+footer .bi-linkedin:hover {
+  color: #0077b5;
+}
+
+footer .bi-twitter:hover {
+  color: #1da1f2;
+}
+
+footer .border-top {
+  border-color: var(--color-border) !important;
+}
+
 /* Responsive Hero Section */
 @media (max-width: 768px) {
   .hero-section {
@@ -339,5 +386,20 @@ h3 {
 
   #myth-vs-fact .card-text {
     font-size: 0.85rem;
+  }
+}
+
+/* Footer responsive adjustments */
+@media (max-width: 767px) {
+  footer .col-md-4 {
+    text-align: center !important;
+  }
+
+  footer .justify-content-md-start {
+    justify-content: center !important;
+  }
+
+  footer .justify-content-md-end {
+    justify-content: center !important;
   }
 }
