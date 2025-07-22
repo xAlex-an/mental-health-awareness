@@ -14,7 +14,7 @@
 
   /*  Text Colors */
   --color-text-dark: #2f2f2f;
-  --color-text-muted: #6c757d;
+  --color-text-muted: #4a4a4a;
 
   /*  Accent Colors */
   --color-btn: #5c8a72;
@@ -50,16 +50,16 @@ h3 {
   color: var(--color-green);
 }
 .navbar-brand i {
-  color: var(--color-green);
+  color: var(--color-green-dark);
 }
 
 .navbar-brand {
-  color: var(--color-green) !important;
+  color: var(--color-green-dark) !important;
   text-decoration: none;
 }
 
 .custom-navbar {
-  background-color: var(--color-white);
+  background-color: var(--color-nude-bg);
   box-shadow: 0 2px 4px var(--color-shadow);
 }
 
