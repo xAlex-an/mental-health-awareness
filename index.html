@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="Description" content="Enter your description here" />
+    <meta
+      name="Description"
+      content="Quiet Space - Your safe haven for mental health support, gentle reminders, and wellness resources. Find calm and healing in our supportive community."
+    />
+    <meta
+      name="keywords"
+      content="mental health, wellness, support, quiet space, mindfulness, therapy, self-care"
+    />
+    <meta name="author" content="Quiet Space" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
@@ -24,11 +32,15 @@
   <body>
     <!-- Navigation Bar -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
+      <nav
+        class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar"
+        aria-label="Main navigation"
+      >
         <div class="container px-3 px-lg-4">
           <a
             class="navbar-brand fw-bold fs-4 d-flex align-items-center"
-            href="#home"
+            href="#hero"
+            aria-label="Quiet Space - Go to homepage"
           >
             <i class="bi bi-moon-stars me-2"></i>
             Quiet Space
@@ -48,27 +60,44 @@
             class="collapse navbar-collapse justify-content-end"
             id="navbarNav"
           >
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto" role="menubar">
               <li class="nav-item">
-                <a class="nav-link active px-3 py-2" href="#home">Home</a>
+                <a
+                  class="nav-link active px-3 py-2"
+                  href="#hero"
+                  role="menuitem"
+                  aria-current="page"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link px-3 py-2" href="#gentle-reminders"
+                <a
+                  class="nav-link px-3 py-2"
+                  href="#gentle-reminders"
+                  role="menuitem"
                   ><span class="d-lg-inline d-none">Gentle Reminders</span
                   ><span class="d-lg-none">Reminders</span></a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link px-3 py-2" href="#daily-care">Daily Care</a>
+                <a class="nav-link px-3 py-2" href="#daily-care" role="menuitem"
+                  >Daily Care</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link px-3 py-2" href="#safe-resources"
+                <a
+                  class="nav-link px-3 py-2"
+                  href="#safe-resources"
+                  role="menuitem"
                   ><span class="d-lg-inline d-none">Safe Resources</span
                   ><span class="d-lg-none">Resources</span></a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link px-3 py-2" href="#help-support"
+                <a
+                  class="nav-link px-3 py-2"
+                  href="#help-support"
+                  role="menuitem"
                   ><span class="d-lg-inline d-none">Need Support?</span
                   ><span class="d-lg-none">Support</span></a
                 >
@@ -84,21 +113,26 @@
       <section
         id="hero"
         class="hero-section d-flex align-items-center justify-content-center text-center position-relative"
+        aria-labelledby="hero-title"
       >
         <div
           class="hero-overlay position-absolute top-0 start-0 w-100 h-100"
+          aria-hidden="true"
         ></div>
         <div class="container position-relative z-2">
           <div class="row justify-content-center">
             <div class="col-lg-8 col-md-10">
-              <h1 class="hero-title display-4 fw-bold text-white mb-4">
+              <h1
+                id="hero-title"
+                class="hero-title display-4 fw-bold text-white mb-4"
+              >
                 Your Quiet Space for a Calmer Mind
               </h1>
               <p class="hero-subtitle lead mb-5 px-3">
                 Take a breath. You're safe here. Explore gentle reminders,
                 simple tips, and trusted support for your mental wellbeing.
               </p>
-              <div class="hero-actions">
+              <nav class="hero-actions" aria-label="Main actions">
                 <a
                   href="#gentle-reminders"
                   class="btn btn-primary btn-lg me-3 mb-3"
@@ -111,67 +145,84 @@
                 >
                   Need Support?
                 </a>
-              </div>
+              </nav>
             </div>
           </div>
         </div>
       </section>
       <!-- Why Quiet Space Section -->
-      <section class="py-6" style="padding-top: 6rem; padding-bottom: 6rem">
+      <section
+        id="why-quiet-space"
+        class="py-6"
+        style="padding-top: 6rem; padding-bottom: 6rem"
+        aria-labelledby="why-quiet-space-title"
+      >
         <div class="container text-center">
-          <h2 class="mb-4">Why Quiet Space?</h2>
+          <h2 id="why-quiet-space-title" class="mb-4">Why Quiet Space?</h2>
           <p class="mb-5 text-muted">
             We know how overwhelming life can feel. That's why we've created a
             calming space filled with mindful tools and gentle guidance – just
             for you.
           </p>
-          <div class="row g-4">
-            <div class="col-md-6 col-lg-3">
+          <div class="row g-4" role="list">
+            <article class="col-md-6 col-lg-3">
               <div class="card h-100 border-0 shadow-sm">
                 <div class="card-body">
-                  <i class="bi bi-chat-heart-fill fs-1 text-success mb-3"></i>
-                  <h5 class="card-title">Gentle Reminders</h5>
+                  <i
+                    class="bi bi-chat-heart-fill fs-1 text-success mb-3"
+                    aria-hidden="true"
+                  ></i>
+                  <h3 class="card-title h5">Gentle Reminders</h3>
                   <p class="card-text">
                     Daily messages to soothe your mind and bring focus.
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
+            </article>
+            <article class="col-md-6 col-lg-3">
               <div class="card h-100 border-0 shadow-sm">
                 <div class="card-body">
-                  <i class="bi bi-sun-fill fs-1 text-warning mb-3"></i>
-                  <h5 class="card-title">Daily Care Tips</h5>
+                  <i
+                    class="bi bi-sun-fill fs-1 text-warning mb-3"
+                    aria-hidden="true"
+                  ></i>
+                  <h3 class="card-title h5">Daily Care Tips</h3>
                   <p class="card-text">
                     Simple ways to reconnect with your body and breath.
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
+            </article>
+            <article class="col-md-6 col-lg-3">
               <div class="card h-100 border-0 shadow-sm">
                 <div class="card-body">
-                  <i class="bi bi-flower1 fs-1 text-primary mb-3"></i>
-                  <h5 class="card-title">Grounding Tools</h5>
+                  <i
+                    class="bi bi-flower1 fs-1 text-primary mb-3"
+                    aria-hidden="true"
+                  ></i>
+                  <h3 class="card-title h5">Grounding Tools</h3>
                   <p class="card-text">
                     Visuals, sounds, and breathing guides to help you stay
                     present.
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
+            </article>
+            <article class="col-md-6 col-lg-3">
               <div class="card h-100 border-0 shadow-sm">
                 <div class="card-body">
-                  <i class="bi bi-people-fill fs-1 text-info mb-3"></i>
-                  <h5 class="card-title">Safe Support</h5>
+                  <i
+                    class="bi bi-people-fill fs-1 text-info mb-3"
+                    aria-hidden="true"
+                  ></i>
+                  <h3 class="card-title h5">Safe Support</h3>
                   <p class="card-text">
                     Curated resources and trusted links for when you need more
                     help.
                   </p>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
@@ -181,99 +232,137 @@
         id="feelings-check"
         class="py-6 mt-5 bg-white"
         style="padding-top: 6rem; padding-bottom: 6rem"
+        aria-labelledby="feelings-check-title"
       >
         <div class="container text-center">
-          <h2 class="mb-4">How are you feeling today?</h2>
+          <h2 id="feelings-check-title" class="mb-4">
+            How are you feeling today?
+          </h2>
           <p class="mb-5 text-muted">
             Take a moment to check in with yourself. Your feelings are valid,
             and we're here to support you.
           </p>
 
           <!-- First Row -->
-          <div class="row g-4 mb-4">
-            <div class="col-md-4">
+          <div class="row g-4 mb-4" role="list">
+            <article class="col-md-4">
               <div
                 class="card h-100 border-0 shadow-sm feeling-card"
                 data-emotion="happy"
               >
                 <div class="card-body text-center p-4">
-                  <button class="btn feeling-btn mb-3" data-feeling="happy">
-                    <i class="bi bi-emoji-smile fs-1 text-warning"></i>
+                  <button
+                    class="btn feeling-btn mb-3"
+                    data-feeling="happy"
+                    aria-label="Select happy emotion"
+                  >
+                    <i
+                      class="bi bi-emoji-smile fs-1 text-warning"
+                      aria-hidden="true"
+                    ></i>
                   </button>
-                  <h5 class="card-title">Happy</h5>
+                  <h3 class="card-title h5">Happy</h3>
                   <p class="card-text text-muted">
                     Feeling joyful and positive
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
+            </article>
+            <article class="col-md-4">
               <div
                 class="card h-100 border-0 shadow-sm feeling-card"
                 data-emotion="calm"
               >
                 <div class="card-body text-center p-4">
-                  <button class="btn feeling-btn mb-3" data-feeling="calm">
-                    <i class="bi bi-emoji-neutral fs-1 text-success"></i>
+                  <button
+                    class="btn feeling-btn mb-3"
+                    data-feeling="calm"
+                    aria-label="Select calm emotion"
+                  >
+                    <i
+                      class="bi bi-emoji-neutral fs-1 text-success"
+                      aria-hidden="true"
+                    ></i>
                   </button>
-                  <h5 class="card-title">Calm</h5>
+                  <h3 class="card-title h5">Calm</h3>
                   <p class="card-text text-muted">
                     Feeling peaceful and relaxed
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
+            </article>
+            <article class="col-md-4">
               <div
                 class="card h-100 border-0 shadow-sm feeling-card"
                 data-emotion="excited"
               >
                 <div class="card-body text-center p-4">
-                  <button class="btn feeling-btn mb-3" data-feeling="excited">
-                    <i class="bi bi-emoji-laughing fs-1 text-primary"></i>
+                  <button
+                    class="btn feeling-btn mb-3"
+                    data-feeling="excited"
+                    aria-label="Select excited emotion"
+                  >
+                    <i
+                      class="bi bi-emoji-laughing fs-1 text-primary"
+                      aria-hidden="true"
+                    ></i>
                   </button>
-                  <h5 class="card-title">Excited</h5>
+                  <h3 class="card-title h5">Excited</h3>
                   <p class="card-text text-muted">
                     Feeling energetic and enthusiastic
                   </p>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
 
           <!-- Second Row -->
-          <div class="row g-4">
-            <div class="col-md-4">
+          <div class="row g-4" role="list">
+            <article class="col-md-4">
               <div
                 class="card h-100 border-0 shadow-sm feeling-card"
                 data-emotion="anxious"
               >
                 <div class="card-body text-center p-4">
-                  <button class="btn feeling-btn mb-3" data-feeling="anxious">
-                    <i class="bi bi-emoji-frown fs-1 text-secondary"></i>
+                  <button
+                    class="btn feeling-btn mb-3"
+                    data-feeling="anxious"
+                    aria-label="Select anxious emotion"
+                  >
+                    <i
+                      class="bi bi-emoji-frown fs-1 text-secondary"
+                      aria-hidden="true"
+                    ></i>
                   </button>
-                  <h5 class="card-title">Anxious</h5>
+                  <h3 class="card-title h5">Anxious</h3>
                   <p class="card-text text-muted">
                     Feeling worried or stressed
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
+            </article>
+            <article class="col-md-4">
               <div
                 class="card h-100 border-0 shadow-sm feeling-card"
                 data-emotion="sad"
               >
                 <div class="card-body text-center p-4">
-                  <button class="btn feeling-btn mb-3" data-feeling="sad">
-                    <i class="bi bi-emoji-frown fs-1 text-info"></i>
+                  <button
+                    class="btn feeling-btn mb-3"
+                    data-feeling="sad"
+                    aria-label="Select sad emotion"
+                  >
+                    <i
+                      class="bi bi-emoji-frown fs-1 text-info"
+                      aria-hidden="true"
+                    ></i>
                   </button>
-                  <h5 class="card-title">Sad</h5>
+                  <h3 class="card-title h5">Sad</h3>
                   <p class="card-text text-muted">Feeling down or melancholy</p>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
+            </article>
+            <article class="col-md-4">
               <div
                 class="card h-100 border-0 shadow-sm feeling-card"
                 data-emotion="overwhelmed"
@@ -282,14 +371,18 @@
                   <button
                     class="btn feeling-btn mb-3"
                     data-feeling="overwhelmed"
+                    aria-label="Select overwhelmed emotion"
                   >
-                    <i class="bi bi-emoji-dizzy fs-1 text-danger"></i>
+                    <i
+                      class="bi bi-emoji-dizzy fs-1 text-danger"
+                      aria-hidden="true"
+                    ></i>
                   </button>
-                  <h5 class="card-title">Overwhelmed</h5>
+                  <h3 class="card-title h5">Overwhelmed</h3>
                   <p class="card-text text-muted">Feeling like it's too much</p>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
 
           <div class="mt-5">
@@ -309,19 +402,20 @@
         id="myth-vs-fact"
         class="py-6"
         style="padding-top: 6rem; padding-bottom: 6rem"
+        aria-labelledby="myth-vs-fact-title"
       >
         <div class="container">
-          <div class="text-center mb-5">
-            <h2 class="mb-4">Myth vs Fact</h2>
+          <header class="text-center mb-5">
+            <h2 id="myth-vs-fact-title" class="mb-4">Myth vs Fact</h2>
             <p class="mb-5 text-muted">
               Let's break down common misconceptions about mental health with
               evidence-based facts.
             </p>
-          </div>
+          </header>
 
-          <div class="row g-4">
+          <div class="row g-4" role="list">
             <!-- Myth Card 1 -->
-            <div class="col-md-6 col-lg-4">
+            <article class="col-md-6 col-lg-4">
               <div class="card h-100 border-0 shadow-sm rounded-4">
                 <img
                   src="assets/images/myth1.jpg"
@@ -333,15 +427,19 @@
                   <div class="mb-3">
                     <span
                       class="badge bg-danger-subtle text-danger border border-danger mb-2"
+                      role="img"
+                      aria-label="Myth"
                       >MYTH</span
                     >
-                    <h6 class="card-title text-muted">
+                    <h3 class="card-title text-muted h6">
                       "Mental health problems are a sign of weakness"
-                    </h6>
+                    </h3>
                   </div>
                   <div>
                     <span
                       class="badge bg-success-subtle text-success border border-success mb-2"
+                      role="img"
+                      aria-label="Fact"
                       >FACT</span
                     >
                     <p class="card-text text-muted mb-0">
@@ -352,10 +450,10 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Myth Card 2 -->
-            <div class="col-md-6 col-lg-4">
+            <article class="col-md-6 col-lg-4">
               <div class="card h-100 border-0 shadow-sm rounded-4">
                 <img
                   src="assets/images/myth2.jpg"
@@ -367,15 +465,19 @@
                   <div class="mb-3">
                     <span
                       class="badge bg-danger-subtle text-danger border border-danger mb-2"
+                      role="img"
+                      aria-label="Myth"
                       >MYTH</span
                     >
-                    <h6 class="card-title text-muted">
+                    <h3 class="card-title text-muted h6">
                       "Therapy is only for people with severe problems"
-                    </h6>
+                    </h3>
                   </div>
                   <div>
                     <span
                       class="badge bg-success-subtle text-success border border-success mb-2"
+                      role="img"
+                      aria-label="Fact"
                       >FACT</span
                     >
                     <p class="card-text text-muted mb-0">
@@ -386,10 +488,10 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Myth Card 3 -->
-            <div class="col-md-6 col-lg-4">
+            <article class="col-md-6 col-lg-4">
               <div class="card h-100 border-0 shadow-sm rounded-4">
                 <img
                   src="assets/images/myth3.jpg"
@@ -401,15 +503,19 @@
                   <div class="mb-3">
                     <span
                       class="badge bg-danger-subtle text-danger border border-danger mb-2"
+                      role="img"
+                      aria-label="Myth"
                       >MYTH</span
                     >
-                    <h6 class="card-title text-muted">
+                    <h3 class="card-title text-muted h6">
                       "Mental health issues are just 'all in your head'"
-                    </h6>
+                    </h3>
                   </div>
                   <div>
                     <span
                       class="badge bg-success-subtle text-success border border-success mb-2"
+                      role="img"
+                      aria-label="Fact"
                       >FACT</span
                     >
                     <p class="card-text text-muted mb-0">
@@ -420,10 +526,10 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Myth Card 4 -->
-            <div class="col-md-6 col-lg-4">
+            <article class="col-md-6 col-lg-4">
               <div class="card h-100 border-0 shadow-sm rounded-4">
                 <img
                   src="assets/images/myth4.jpg"
@@ -435,16 +541,20 @@
                   <div class="mb-3">
                     <span
                       class="badge bg-danger-subtle text-danger border border-danger mb-2"
+                      role="img"
+                      aria-label="Myth"
                       >MYTH</span
                     >
-                    <h6 class="card-title text-muted">
+                    <h3 class="card-title text-muted h6">
                       "People with mental health problems can't work or be
                       successful"
-                    </h6>
+                    </h3>
                   </div>
                   <div>
                     <span
                       class="badge bg-success-subtle text-success border border-success mb-2"
+                      role="img"
+                      aria-label="Fact"
                       >FACT</span
                     >
                     <p class="card-text text-muted mb-0">
@@ -455,13 +565,13 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Myth Card 5 -->
-            <div class="col-md-6 col-lg-4">
+            <article class="col-md-6 col-lg-4">
               <div class="card h-100 border-0 shadow-sm rounded-4">
                 <img
-                  src="assets/images/myths5.jpg"
+                  src="assets/images/myth5.jpg"
                   class="card-img-top rounded-top-4"
                   style="height: 200px; object-fit: cover"
                   alt="A woman holds a pill bottle"
@@ -470,15 +580,19 @@
                   <div class="mb-3">
                     <span
                       class="badge bg-danger-subtle text-danger border border-danger mb-2"
+                      role="img"
+                      aria-label="Myth"
                       >MYTH</span
                     >
-                    <h6 class="card-title text-muted">
+                    <h3 class="card-title text-muted h6">
                       "Medication is the only treatment for mental health"
-                    </h6>
+                    </h3>
                   </div>
                   <div>
                     <span
                       class="badge bg-success-subtle text-success border border-success mb-2"
+                      role="img"
+                      aria-label="Fact"
                       >FACT</span
                     >
                     <p class="card-text text-muted mb-0">
@@ -489,10 +603,10 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Myth Card 6 -->
-            <div class="col-md-6 col-lg-4">
+            <article class="col-md-6 col-lg-4">
               <div class="card h-100 border-0 shadow-sm rounded-4">
                 <img
                   src="assets/images/myth6.jpg"
@@ -504,15 +618,19 @@
                   <div class="mb-3">
                     <span
                       class="badge bg-danger-subtle text-danger border border-danger mb-2"
+                      role="img"
+                      aria-label="Myth"
                       >MYTH</span
                     >
-                    <h6 class="card-title text-muted">
+                    <h3 class="card-title text-muted h6">
                       "You should be able to 'snap out of' depression"
-                    </h6>
+                    </h3>
                   </div>
                   <div>
                     <span
                       class="badge bg-success-subtle text-success border border-success mb-2"
+                      role="img"
+                      aria-label="Fact"
                       >FACT</span
                     >
                     <p class="card-text text-muted mb-0">
@@ -523,7 +641,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
 
           <div class="text-center mt-5">
@@ -545,12 +663,12 @@
           <!-- Logo and Description Column -->
           <div class="col-md-6 text-center text-md-start">
             <div class="mb-3">
-              <h5
-                class="fw-bold text-success d-flex align-items-center justify-content-center justify-content-md-start"
+              <h2
+                class="fw-bold text-success d-flex align-items-center justify-content-center justify-content-md-start h5"
               >
                 <i class="bi bi-moon-stars me-2"></i>
                 Quiet Space
-              </h5>
+              </h2>
               <p class="text-muted mb-0">
                 Supporting your mental wellness journey with gentle reminders,
                 trusted resources, and a safe space for healing.
@@ -560,23 +678,40 @@
 
           <!-- Social Media Column -->
           <div class="col-md-6 text-center text-md-end">
-            <h6 class="fw-bold text-dark mb-3">Connect With Us</h6>
-            <div
+            <h3 class="fw-bold text-dark mb-3 h6">Connect With Us</h3>
+            <nav
               class="d-flex justify-content-center justify-content-md-end gap-3"
+              aria-label="Social media links"
             >
-              <a href="#" class="text-muted fs-4" aria-label="Facebook">
-                <i class="bi bi-facebook"></i>
+              <a
+                href="#"
+                class="text-muted fs-4"
+                aria-label="Follow us on Facebook"
+              >
+                <i class="bi bi-facebook" aria-hidden="true"></i>
               </a>
-              <a href="#" class="text-muted fs-4" aria-label="Instagram">
-                <i class="bi bi-instagram"></i>
+              <a
+                href="#"
+                class="text-muted fs-4"
+                aria-label="Follow us on Instagram"
+              >
+                <i class="bi bi-instagram" aria-hidden="true"></i>
               </a>
-              <a href="#" class="text-muted fs-4" aria-label="LinkedIn">
-                <i class="bi bi-linkedin"></i>
+              <a
+                href="#"
+                class="text-muted fs-4"
+                aria-label="Follow us on LinkedIn"
+              >
+                <i class="bi bi-linkedin" aria-hidden="true"></i>
               </a>
-              <a href="#" class="text-muted fs-4" aria-label="Twitter">
-                <i class="bi bi-twitter"></i>
+              <a
+                href="#"
+                class="text-muted fs-4"
+                aria-label="Follow us on Twitter"
+              >
+                <i class="bi bi-twitter" aria-hidden="true"></i>
               </a>
-            </div>
+            </nav>
             <div class="mt-3">
               <small class="text-muted">
                 Follow us for daily wellness tips and support
