@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+/* General styles */
+
+:root {
+  /*  Primary Colors */
+  --color-green: #3f8c70;
+  --color-green-dark: #2e5e4f;
+  --color-green-light: #a3c2a0;
+
+  /*  Nude / Beige Tones */
+  --color-nude-bg: #f6f2eb;
+  --color-white: #ffffff;
+
+  /*  Text Colors */
+  --color-text-dark: #2f2f2f;
+  --color-text-muted: #6c757d;
+
+  /*  Accent Colors */
+  --color-btn: #5c8a72;
+  --color-btn-hover: #2e5e4f;
+  --color-border: #ddddd8;
+
+  /*  Extra UI */
+  --color-shadow: rgba(0, 0, 0, 0.05);
+
+  /* Font Families */
+  --primary-font: "Playfair Display", serif;
+  --secondary-font: "Lato", sans-serif;
+}
+body {
+  background-color: var(--color-nude-bg);
+  color: var(--color-text-dark);
+  font-family: var(--secondary-font);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--primary-font);
+  color: var(--color-green-dark);
+}
+.navbar-nav .nav-link.active {
+  color: var(--color-green-dark);
+  font-weight: 600;
+  border-bottom: 2px solid var(--color-green-dark);
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--color-green);
+}
+.navbar-brand i {
+  color: var(--color-green);
+}
+
+.navbar-brand {
+  color: var(--color-green) !important;
+  text-decoration: none;
+}
+
+.custom-navbar {
+  background-color: var(--color-white);
+  box-shadow: 0 2px 4px var(--color-shadow);
+}
+
+.navbar-nav .nav-link {
+  color: var(--color-text-dark);
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+/* Responsive Navbar Styles */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .navbar-nav .nav-link:last-child {
+    border-bottom: none;
+  }
+
+  .navbar-nav .nav-link.active {
+    background-color: var(--color-nude-bg);
+    border-bottom: 1px solid var(--color-green-dark);
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.1rem !important;
+  }
+
+  .navbar-toggler {
+    border: none;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
