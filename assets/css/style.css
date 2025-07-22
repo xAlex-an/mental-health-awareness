@@ -210,22 +210,6 @@ h3 {
   box-shadow: 0 0 0 3px rgba(63, 140, 112, 0.3);
 }
 
-.feeling-card.selected {
-  border-color: var(--color-green) !important;
-  background: rgba(63, 140, 112, 0.05);
-  transform: translateY(-3px);
-}
-
-.feeling-card.selected .feeling-btn {
-  background: var(--color-green);
-  color: white;
-  transform: scale(1.05);
-}
-
-.feeling-card.selected .feeling-btn i {
-  color: white !important;
-}
-
 .feeling-card .card-title {
   font-family: var(--primary-font);
   font-weight: 600;
