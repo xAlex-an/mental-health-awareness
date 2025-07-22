@@ -12,13 +12,13 @@
   --color-green-dark: #2e5e4f;
   --color-green-light: #a3c2a0;
 
-  /*  Nude / Beige Tones */
+  /*  Nude/ White for backgrounds */
   --color-nude-bg: #f6f2eb;
   --color-white: #ffffff;
 
   /*  Text Colors */
   --color-text-dark: #2f2f2f;
-  --color-text-muted: #4a4a4a;
+  --color-text-muted: #333333;
 
   /*  Accent Colors */
   --color-btn: #5c8a72;
@@ -44,6 +44,17 @@ h3 {
   font-family: var(--primary-font);
   color: var(--color-green-dark);
 }
+
+p {
+  color: var(--color-text-dark);
+  line-height: 1.6;
+}
+
+/* Override Bootstrap's text-muted for better contrast */
+.text-muted {
+  color: var(--color-text-muted) !important;
+}
+
 .navbar-nav .nav-link.active {
   color: var(--color-green-dark);
   font-weight: 600;
