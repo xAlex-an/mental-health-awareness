@@ -168,3 +168,86 @@ h3 {
     margin: 0 0 15px 0;
   }
 }
+
+/* Feelings Check Section - Simplified Modern Design */
+.feeling-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 15px !important;
+  border: 2px solid transparent !important;
+  background: white;
+}
+
+.feeling-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+  border-color: var(--color-green-light) !important;
+}
+
+.feeling-btn {
+  border: none;
+  background: var(--color-nude-bg);
+  padding: 1.5rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feeling-btn:hover {
+  transform: scale(1.1);
+  background: var(--color-green-light);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.feeling-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(63, 140, 112, 0.3);
+}
+
+.feeling-card.selected {
+  border-color: var(--color-green) !important;
+  background: rgba(63, 140, 112, 0.05);
+  transform: translateY(-3px);
+}
+
+.feeling-card.selected .feeling-btn {
+  background: var(--color-green);
+  color: white;
+  transform: scale(1.05);
+}
+
+.feeling-card.selected .feeling-btn i {
+  color: white !important;
+}
+
+.feeling-card .card-title {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  color: var(--color-green-dark);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.feeling-card .card-text {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .feeling-btn {
+    width: 70px;
+    height: 70px;
+    padding: 1rem;
+  }
+
+  .feeling-btn i {
+    font-size: 2rem !important;
+  }
+}

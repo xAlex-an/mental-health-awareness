@@ -175,9 +175,191 @@
           </div>
         </div>
       </section>
+
+      <!-- How Are You Feeling Section -->
+      <section id="feelings-check" class="py-5 mt-5 bg-light">
+        <div class="container text-center">
+          <h2 class="mb-4">How are you feeling today?</h2>
+          <p class="mb-5 text-muted">
+            Take a moment to check in with yourself. Your feelings are valid,
+            and we're here to support you.
+          </p>
+
+          <!-- First Row -->
+          <div class="row g-4 mb-4">
+            <div class="col-md-4">
+              <div
+                class="card h-100 border-0 shadow-sm feeling-card"
+                data-emotion="happy"
+              >
+                <div class="card-body text-center p-4">
+                  <button class="btn feeling-btn mb-3" data-feeling="happy">
+                    <i class="bi bi-emoji-smile fs-1 text-warning"></i>
+                  </button>
+                  <h5 class="card-title">Happy</h5>
+                  <p class="card-text text-muted">
+                    Feeling joyful and positive
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="card h-100 border-0 shadow-sm feeling-card"
+                data-emotion="calm"
+              >
+                <div class="card-body text-center p-4">
+                  <button class="btn feeling-btn mb-3" data-feeling="calm">
+                    <i class="bi bi-emoji-neutral fs-1 text-success"></i>
+                  </button>
+                  <h5 class="card-title">Calm</h5>
+                  <p class="card-text text-muted">
+                    Feeling peaceful and relaxed
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="card h-100 border-0 shadow-sm feeling-card"
+                data-emotion="excited"
+              >
+                <div class="card-body text-center p-4">
+                  <button class="btn feeling-btn mb-3" data-feeling="excited">
+                    <i class="bi bi-emoji-laughing fs-1 text-primary"></i>
+                  </button>
+                  <h5 class="card-title">Excited</h5>
+                  <p class="card-text text-muted">
+                    Feeling energetic and enthusiastic
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Row -->
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div
+                class="card h-100 border-0 shadow-sm feeling-card"
+                data-emotion="anxious"
+              >
+                <div class="card-body text-center p-4">
+                  <button class="btn feeling-btn mb-3" data-feeling="anxious">
+                    <i class="bi bi-emoji-frown fs-1 text-secondary"></i>
+                  </button>
+                  <h5 class="card-title">Anxious</h5>
+                  <p class="card-text text-muted">
+                    Feeling worried or stressed
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="card h-100 border-0 shadow-sm feeling-card"
+                data-emotion="sad"
+              >
+                <div class="card-body text-center p-4">
+                  <button class="btn feeling-btn mb-3" data-feeling="sad">
+                    <i class="bi bi-emoji-frown fs-1 text-info"></i>
+                  </button>
+                  <h5 class="card-title">Sad</h5>
+                  <p class="card-text text-muted">Feeling down or melancholy</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="card h-100 border-0 shadow-sm feeling-card"
+                data-emotion="overwhelmed"
+              >
+                <div class="card-body text-center p-4">
+                  <button
+                    class="btn feeling-btn mb-3"
+                    data-feeling="overwhelmed"
+                  >
+                    <i class="bi bi-emoji-dizzy fs-1 text-danger"></i>
+                  </button>
+                  <h5 class="card-title">Overwhelmed</h5>
+                  <p class="card-text text-muted">Feeling like it's too much</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5">
+            <p class="text-muted mb-3">
+              Remember: All feelings are temporary and valid. You're not alone.
+              💚
+            </p>
+            <a href="#help-support" class="btn btn-primary btn-lg mt-3"
+              >I need support right now</a
+            >
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+    <script>
+      // Feelings Check Interaction
+      document.addEventListener("DOMContentLoaded", function () {
+        const feelingButtons = document.querySelectorAll(".feeling-btn");
+        const feelingCards = document.querySelectorAll(".feeling-card");
+
+        feelingButtons.forEach((button, index) => {
+          button.addEventListener("click", function () {
+            const feeling = this.getAttribute("data-feeling");
+            const card = this.closest(".feeling-card");
+
+            // Remove previous selection
+            feelingCards.forEach((c) => c.classList.remove("selected"));
+
+            // Add selection to clicked card
+            card.classList.add("selected");
+
+            // Show supportive message
+            showFeelingMessage(feeling);
+          });
+        });
+
+        function showFeelingMessage(feeling) {
+          const messages = {
+            happy: "That's wonderful! Keep nurturing that joy. 😊",
+            calm: "Beautiful! Enjoy this peaceful moment. 🌿",
+            excited: "Amazing energy! Channel it into something positive. ✨",
+            anxious:
+              "It's okay to feel anxious. Take deep breaths. You've got this. 🌸",
+            sad: "Your feelings are valid. Be gentle with yourself today. 💙",
+            overwhelmed:
+              "Take it one step at a time. You don't have to do it all today. 🤗",
+          };
+
+          // Create or update message element
+          let messageEl = document.getElementById("feeling-message");
+          if (!messageEl) {
+            messageEl = document.createElement("div");
+            messageEl.id = "feeling-message";
+            messageEl.className = "alert alert-info mt-4 mx-auto";
+            messageEl.style.maxWidth = "500px";
+            document
+              .querySelector("#feelings-check .container")
+              .appendChild(messageEl);
+          }
+
+          messageEl.innerHTML = `
+            <i class="bi bi-heart-fill me-2"></i>
+            ${messages[feeling]}
+          `;
+          messageEl.style.display = "block";
+
+          // Smooth scroll to message
+          messageEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+      });
+    </script>
   </body>
 </html>
