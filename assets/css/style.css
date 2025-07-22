@@ -174,14 +174,15 @@ h3 {
   transition: all 0.3s ease;
   cursor: pointer;
   border-radius: 15px !important;
-  border: 2px solid transparent !important;
+  border: 2px solid var(--color-border) !important;
   background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08) !important;
 }
 
 .feeling-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
-  border-color: var(--color-green-light) !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
+  border-color: var(--color-green) !important;
 }
 
 .feeling-btn {
@@ -221,6 +222,19 @@ h3 {
 .feeling-card .card-text {
   color: var(--color-text-muted);
   font-size: 0.9rem;
+}
+
+/* Enhanced section styling for white background */
+#feelings-check {
+  border-top: 1px solid var(--color-border);
+}
+
+#feelings-check h2 {
+  color: var(--color-green-dark);
+}
+
+#feelings-check .text-muted {
+  color: var(--color-text-muted) !important;
 }
 
 /* Responsive */
