@@ -74,41 +74,6 @@ h3 {
   border-bottom: 1px solid var(--color-border);
 }
 
-/* Responsive section spacing */
-@media (max-width: 768px) {
-  .section {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
-  .section-lg {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
-  .section-sm {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .section {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-
-  .section-lg {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
-  .section-sm {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-}
-
 .navbar-nav .nav-link.active {
   color: var(--color-green-dark);
   font-weight: 600;
@@ -311,6 +276,41 @@ footer .bi-twitter:hover {
 
 footer .border-top {
   border-color: var(--color-border) !important;
+}
+
+/* Responsive section spacing */
+@media (max-width: 768px) {
+  .section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .section-lg {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .section-sm {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .section-lg {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .section-sm {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
 }
 
 /* Responsive Adjustments Feelings Check Section */
