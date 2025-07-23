@@ -49,6 +49,66 @@ h3 {
   color: var(--color-text-muted) !important;
 }
 
+/* Section Spacing System */
+.section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.section-lg {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.section-sm {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Section borders for visual separation */
+.section-border-top {
+  border-top: 1px solid var(--color-border);
+}
+
+.section-border-bottom {
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Responsive section spacing */
+@media (max-width: 768px) {
+  .section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .section-lg {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .section-sm {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .section-lg {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .section-sm {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
 .navbar-nav .nav-link.active {
   color: var(--color-green-dark);
   font-weight: 600;
@@ -225,19 +285,6 @@ h3 {
 .feeling-card .card-text {
   color: var(--color-text-muted);
   font-size: 0.9rem;
-}
-
-/* Enhanced section styling for white background */
-#feelings-check {
-  border-top: 1px solid var(--color-border);
-}
-
-#feelings-check h2 {
-  color: var(--color-green-dark);
-}
-
-#feelings-check .text-muted {
-  color: var(--color-text-muted) !important;
 }
 
 /* Myth vs Fact Section */
