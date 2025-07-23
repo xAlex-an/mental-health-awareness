@@ -4,19 +4,413 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="Description" content="Enter your description here" />
+    <meta
+      name="Description"
+      content="Quiet Space - Your safe haven for mental health support, gentle reminders, and wellness resources. Find calm and healing in our supportive community."
+    />
+    <meta
+      name="keywords"
+      content="mental health, wellness, support, quiet space, mindfulness, therapy, self-care"
+    />
+    <meta name="author" content="Quiet Space" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Title</title>
+    <title>Gentle Reminders - Quiet Space</title>
   </head>
   <body>
+    <!-- Navigation Bar -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar"
+        aria-label="Main navigation"
+      >
+        <div class="container px-3 px-lg-4">
+          <a
+            class="navbar-brand fw-bold fs-4 d-flex align-items-center"
+            href="index.html#hero"
+            aria-label="Quiet Space - Go to homepage"
+          >
+            <i class="bi bi-moon-stars me-2"></i>
+            Quiet Space
+          </a>
+          <button
+            class="navbar-toggler border-0 px-1"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="bi bi-list fs-3" style="color: var(--color-green)"></i>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav ms-auto" role="menubar">
+              <li class="nav-item">
+                <a
+                  class="nav-link px-3 py-2"
+                  href="index.html#hero"
+                  role="menuitem"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active px-3 py-2"
+                  href="reminders.html"
+                  role="menuitem"
+                  aria-current="page"
+                  ><span class="d-lg-inline d-none">Gentle Reminders</span
+                  ><span class="d-lg-none">Reminders</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link px-3 py-2"
+                  href="index.html#daily-care"
+                  role="menuitem"
+                  >Daily Care</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link px-3 py-2"
+                  href="index.html#safe-resources"
+                  role="menuitem"
+                  ><span class="d-lg-inline d-none">Safe Resources</span
+                  ><span class="d-lg-none">Resources</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link px-3 py-2"
+                  href="index.html#help-support"
+                  role="menuitem"
+                  ><span class="d-lg-inline d-none">Need Support?</span
+                  ><span class="d-lg-none">Support</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+      <section
+        id="hero"
+        class="hero-section d-flex align-items-center justify-content-center text-center position-relative"
+        aria-labelledby="hero-title"
+      >
+        <div
+          class="hero-overlay position-absolute top-0 start-0 w-100 h-100"
+          aria-hidden="true"
+        ></div>
+        <div class="container position-relative z-2">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+              <h1
+                id="hero-title"
+                class="hero-title display-4 display-md-3 display-lg-2 fw-bold text-white mb-4"
+              >
+                Gentle Reminders for Your Mind
+              </h1>
+              <p class="hero-subtitle lead fs-5 fs-md-4 mb-5 px-2 px-md-3">
+                Daily messages of hope, encouragement, and mindfulness to help
+                you navigate life's challenges with grace.
+              </p>
+              <nav
+                class="hero-actions d-grid d-md-block gap-2"
+                aria-label="Main actions"
+              >
+                <a
+                  href="#reminders-content"
+                  class="btn btn-success btn-lg rounded-pill me-md-3 mb-2 mb-md-3"
+                >
+                  View Today's Reminders
+                </a>
+                <a
+                  href="index.html#help-support"
+                  class="btn btn-outline-light btn-lg rounded-pill mb-2 mb-md-3"
+                >
+                  Need Support?
+                </a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gentle Reminders Content -->
+      <section id="reminders-content" class="section-lg bg-white">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="mb-4">Today's Gentle Reminders</h2>
+            <p class="text-muted mb-4">
+              Take a moment to breathe and reflect on these calming thoughts.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Quote Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 border-0 shadow-sm rounded-4">
+                <div class="card-body text-center p-4">
+                  <div class="mb-4">
+                    <i
+                      class="bi bi-heart-fill text-success fs-1 mb-3"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                  <blockquote class="card-text mb-4">
+                    <p class="fs-5 text-muted mb-0 fst-italic">
+                      "Your feelings are valid, your struggles are real, and
+                      your healing matters."
+                    </p>
+                  </blockquote>
+                  <div class="text-success">
+                    <small class="fw-semibold"
+                      >— A reminder of self-compassion</small
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quote Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 border-0 shadow-sm rounded-4">
+                <div class="card-body text-center p-4">
+                  <div class="mb-4">
+                    <i
+                      class="bi bi-sun-fill text-warning fs-1 mb-3"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                  <blockquote class="card-text mb-4">
+                    <p class="fs-5 text-muted mb-0 fst-italic">
+                      "Progress, not perfection. Every small step forward
+                      counts."
+                    </p>
+                  </blockquote>
+                  <div class="text-warning">
+                    <small class="fw-semibold"
+                      >— Celebrating your journey</small
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quote Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 border-0 shadow-sm rounded-4">
+                <div class="card-body text-center p-4">
+                  <div class="mb-4">
+                    <i
+                      class="bi bi-cloud-rain-fill text-info fs-1 mb-3"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                  <blockquote class="card-text mb-4">
+                    <p class="fs-5 text-muted mb-0 fst-italic">
+                      "It's okay to have storms in your mind. They will pass,
+                      and the sun will shine again."
+                    </p>
+                  </blockquote>
+                  <div class="text-info">
+                    <small class="fw-semibold">— Weather the storms</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quote Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 border-0 shadow-sm rounded-4">
+                <div class="card-body text-center p-4">
+                  <div class="mb-4">
+                    <i
+                      class="bi bi-flower2 text-primary fs-1 mb-3"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                  <blockquote class="card-text mb-4">
+                    <p class="fs-5 text-muted mb-0 fst-italic">
+                      "You are allowed to rest. You are allowed to take breaks.
+                      You are enough."
+                    </p>
+                  </blockquote>
+                  <div class="text-primary">
+                    <small class="fw-semibold">— Permission to pause</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quote Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 border-0 shadow-sm rounded-4">
+                <div class="card-body text-center p-4">
+                  <div class="mb-4">
+                    <i
+                      class="bi bi-moon-stars-fill text-secondary fs-1 mb-3"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                  <blockquote class="card-text mb-4">
+                    <p class="fs-5 text-muted mb-0 fst-italic">
+                      "Healing is not linear. Be patient and gentle with
+                      yourself."
+                    </p>
+                  </blockquote>
+                  <div class="text-secondary">
+                    <small class="fw-semibold">— Embrace the process</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quote Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 border-0 shadow-sm rounded-4">
+                <div class="card-body text-center p-4">
+                  <div class="mb-4">
+                    <i
+                      class="bi bi-tree-fill text-success fs-1 mb-3"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                  <blockquote class="card-text mb-4">
+                    <p class="fs-5 text-muted mb-0 fst-italic">
+                      "You have survived 100% of your worst days. You are
+                      stronger than you know."
+                    </p>
+                  </blockquote>
+                  <div class="text-success">
+                    <small class="fw-semibold"
+                      >— Acknowledge your strength</small
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Call-to-action section -->
+          <div class="text-center mt-5">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="p-4 rounded-4">
+                  <h3 class="h4 mb-3">Need more support?</h3>
+                  <p class="text-muted mb-4">
+                    Remember, seeking help is a sign of strength, not weakness.
+                  </p>
+                  <a
+                    href="index.html#help-support"
+                    class="btn btn-success btn-lg rounded-pill"
+                  >
+                    Find Resources & Support
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light section section-border-top">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Logo and Description Column -->
+          <div class="col-md-6 text-center text-md-start">
+            <div class="mb-3">
+              <div
+                class="fw-bold text-success d-flex align-items-center justify-content-center justify-content-md-start h5"
+              >
+                <i class="bi bi-moon-stars me-2"></i>
+                Quiet Space
+              </div>
+              <p class="text-muted mb-0">
+                Supporting your mental wellness journey with gentle reminders,
+                trusted resources, and a safe space for healing.
+              </p>
+            </div>
+          </div>
+
+          <!-- Social Media Column -->
+          <div class="col-md-6 text-center text-md-end">
+            <div class="fw-bold text-dark mb-3 h6">Connect With Us</div>
+            <nav
+              class="d-flex justify-content-center justify-content-md-end gap-3"
+              aria-label="Social media links"
+            >
+              <a
+                href="#"
+                class="text-muted fs-4"
+                aria-label="Follow us on Facebook"
+              >
+                <i class="bi bi-facebook" aria-hidden="true"></i>
+              </a>
+              <a
+                href="#"
+                class="text-muted fs-4"
+                aria-label="Follow us on Instagram"
+              >
+                <i class="bi bi-instagram" aria-hidden="true"></i>
+              </a>
+              <a
+                href="#"
+                class="text-muted fs-4"
+                aria-label="Follow us on LinkedIn"
+              >
+                <i class="bi bi-linkedin" aria-hidden="true"></i>
+              </a>
+              <a
+                href="#"
+                class="text-muted fs-4"
+                aria-label="Follow us on Twitter"
+              >
+                <i class="bi bi-twitter" aria-hidden="true"></i>
+              </a>
+            </nav>
+            <div class="mt-3">
+              <small class="text-muted">
+                Follow us for daily wellness tips and support
+              </small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="row mt-4 pt-4 border-top">
+          <div class="col-12 text-center">
+            <p class="text-muted mb-0">
+              &copy; 2025 Quiet Space. Made with
+              <i class="bi bi-heart-fill text-danger"></i>
+              for mental wellness.
+            </p>
+            <small class="text-muted">
+              Remember: You are not alone. Help is always available.
+            </small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
   </body>
