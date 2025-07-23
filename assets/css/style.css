@@ -170,68 +170,6 @@ h3 {
   margin: 0 auto;
 }
 
-.btn-primary {
-  background-color: var(--color-btn);
-  border: 2px solid var(--color-btn);
-  font-weight: 600;
-  padding: 12px 30px;
-  border-radius: 50px;
-  transition: all 0.3s ease;
-  display: inline-block;
-}
-
-.btn-primary:hover {
-  background-color: var(--color-btn-hover);
-  border-color: var(--color-btn-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(46, 94, 79, 0.3);
-}
-
-.btn-primary:active,
-.btn-primary:focus,
-.btn-primary:focus-visible,
-.btn-primary.focus {
-  background-color: var(--color-btn-hover);
-  border-color: var(--color-btn-hover);
-  box-shadow: 0 0 0 3px rgba(63, 140, 112, 0.3);
-}
-
-.btn-primary.active,
-.btn-primary:active:focus {
-  background-color: var(--color-btn-hover);
-  border-color: var(--color-btn-hover);
-}
-
-.btn-outline-light {
-  border-width: 2px;
-  font-weight: 600;
-  padding: 12px 30px;
-  border-radius: 50px;
-  transition: all 0.3s ease;
-}
-
-.btn-outline-light:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
-}
-
-.btn-outline-light:active,
-.btn-outline-light:focus,
-.btn-outline-light:focus-visible,
-.btn-outline-light.focus {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.8);
-  color: white;
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
-}
-
-.btn-outline-light.active,
-.btn-outline-light:active:focus {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.8);
-  color: white;
-}
-
 /* Feelings Check Section - Simplified Modern Design */
 .feeling-card {
   transition: all 0.3s ease;
