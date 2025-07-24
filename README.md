@@ -172,11 +172,8 @@ This affected loading time, especially on mobile.
 
 - **Solution**: All images were resized and compressed using MozJPEG.
 
-**Before optimisation:**  
-![Uncompressed Images](docs/screenshots/compressed.images.png)
-
 **After optimisation:**  
-![Compressed Images](docs/screenshots/compressed.img.png)
+![Uncompressed Images](docs/screenshots/compressed.images.png)
 
 ---
 
@@ -227,3 +224,42 @@ During testing, I used a contrast checker to evaluate the **readability and visu
 ![Improved Contrast](docs/screenshots/UX.2.png)
 
 This ensures that headings and subtitles are clear and legible across various devices and lighting conditions, enhancing both **usability** and **accessibility**.
+
+## 🚀 Deployment
+
+This project was deployed using **GitHub Pages**.
+
+To deploy the site, I followed these steps:
+
+1. Pushed the final version of the project to the `main` branch of the GitHub repository.
+2. Navigated to the repository's **Settings** tab.
+3. Scrolled down to the **Pages** section in the left-hand menu.
+4. Under **Source**, selected the `main` branch and set the root folder (`/`) as the source.
+5. GitHub Pages automatically built and deployed the project.
+6. After a few moments, a banner appeared at the top of the Pages section with the live site link.
+
+✅ The live website is available here:  
+[🔗 View Live Site](https://xalex-an.github.io/mental-health-awareness/)
+
+## 🙏 Credits
+
+### 📝 Content
+
+- Several text sections and ideas were created with the support of **GitHub Copilot** and **ChatGPT**, which provided suggestions, content structure ideas, and writing assistance.
+- I wanted to add a **modern touch** to the **"How Are You Feeling"** section, so I used **Copilot in VS Code** to generate creative ideas and code snippets for a more interactive and contemporary feel.
+- Inspiration for layout and section ideas was drawn from award-winning designs on [Awwwards](https://www.awwwards.com/).
+- I focused on **accessibility and good UX practices**, paying attention to high-contrast colours, visual clarity, and a calming user interface.
+- All sections were styled using the **Bootstrap 5** framework for responsiveness and mobile-first design.
+
+### 🎨 Media
+
+- **Illustrations** used on the site were provided by  
+  [Storyset by Freepik](https://storyset.com/) – open-source SVG illustrations.
+- **Photos** used throughout the site (e.g., homepage background and cards) were downloaded from  
+  [Pexels](https://www.pexels.com/) – royalty-free image platform.
+- **Icons** were sourced from [Bootstrap Icons](https://icons.getbootstrap.com/).
+- All **screenshots** and **mockups** were created using browser DevTools and Canva.
+
+---
+
+🎉 Huge thanks to all the creators and platforms listed above for their resources, tools, and inspiration that helped bring **Quiet Space** to life.
