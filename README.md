@@ -248,7 +248,7 @@ To deploy the site, I followed these steps:
 - Several text sections and ideas were created with the support of **GitHub Copilot** and **ChatGPT**, which provided suggestions, content structure ideas, and writing assistance.
 - I wanted to add a **modern touch** to the **"How Are You Feeling"** section, so I used **Copilot in VS Code** to generate creative ideas and code snippets for a more interactive and contemporary feel.
 - Inspiration for layout and section ideas was drawn from award-winning designs on [Awwwards](https://www.awwwards.com/).
-- I focused on **accessibility and good UX practices**, paying attention to high-contrast colours, visual clarity, and a calming user interface.
+- I focused on **accessibility and good UX practices**, paying attention to high-contrast colours. I used Color Contrast Checker [Coolors](https://coolors.co/)
 - All sections were styled using the **Bootstrap 5** framework for responsiveness and mobile-first design.
 
 ### 🎨 Media
