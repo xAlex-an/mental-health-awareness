@@ -670,5 +670,26 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+    <!-- Auto-collapse mobile navbar on internal link clicks -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navbarCollapse = document.querySelector(".navbar-collapse");
+        const internalLinks = document.querySelectorAll(
+          '.navbar-nav a[href^="#"]'
+        );
+
+        internalLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            if (navbarCollapse && navbarCollapse.classList.contains("show")) {
+              const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                toggle: false,
+              });
+              bsCollapse.hide();
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>

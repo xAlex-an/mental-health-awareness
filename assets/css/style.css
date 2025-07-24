@@ -33,9 +33,11 @@
 }
 
 /* Fix navbar overlap on internal links */
+
 html {
   scroll-padding-top: 55px;
 }
+
 body {
   background-color: var(--color-nude-bg);
   color: var(--color-text-dark);
