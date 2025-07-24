@@ -121,3 +121,109 @@ It’s intended to guide users toward professional support options in times of e
 - **Fully responsive layout** – Works smoothly on desktops, tablets, and smartphones.
 - **Soothing visual style** – Gentle colours and rounded elements help reduce stress and promote calm.
 - **Accessible structure** – Clear headings, semantic HTML, and logical reading order improve usability for all users, including those using screen readers.
+
+## 🧪 Testing
+
+Thorough testing was conducted throughout the development process to ensure the website functions smoothly, is visually consistent across devices, and supports the user’s mental wellness journey in an intuitive and accessible way.
+
+### ✅ Features tested
+
+Each page and feature of the site has been individually tested to ensure usability and expected behaviour:
+
+- **Navigation Bar**: Works consistently across all four pages. All links function correctly and allow the user to navigate easily.
+- **Hero Sections and Content Areas**: Display correctly and adapt well to different screen sizes.
+- **Internal Anchor Links** (e.g. "Find Resources & Support" button): Scrolls smoothly to the relevant section.
+- **Images**: Render correctly on all devices.
+- **Interactive Elements**: Accordion panels on the "Safe Resources" page open and close as expected.
+
+The project was tested on:
+
+- 💻 Desktop (1920×1080)
+- 📱 Mobile devices (Galaxy S9+, iPhone SE)
+- 📱 Chrome Developer Tools (responsive view)
+
+The layout adapts correctly on all screen sizes and resolutions. Font sizes, spacing and component placement remain consistent and readable.
+
+### 📊 Lighthouse testing
+
+Lighthouse tests were run on both mobile and desktop views. After optimisation, the following results were achieved:
+
+- **Performance**: 100 (desktop)
+- **Accessibility**: 85
+- **Best Practices**: 81
+- **SEO**: 100
+
+![Lighthouse Screenshot](docs/screenshots/lighthouse.desktop.after.png)
+
+### ✅ HTML and CSS validation
+
+All pages were tested using the official W3C Validators:
+
+- ✅ HTML passed without errors  
+  ![HTML Validator](docs/screenshots/HTML.validator.png)
+- ✅ CSS passed without errors  
+  ![CSS Validator](docs/screenshots/CSS.Validator.png)
+
+### 🐞 Bugs and issues encountered
+
+#### 1. 🔻 Large image files caused poor LCP scores in Lighthouse
+
+This affected loading time, especially on mobile.
+
+- **Solution**: All images were resized and compressed using MozJPEG.
+
+**Before optimisation:**  
+![Uncompressed Images](docs/screenshots/compressed.images.png)
+
+**After optimisation:**  
+![Compressed Images](docs/screenshots/compressed.img.png)
+
+---
+
+#### 2. 🔺 Navbar overlapping internal anchor links on small screens
+
+When clicking internal links (e.g. "Find Resources & Support"), the fixed navigation bar overlapped the target section, cutting off the top of the content.
+
+- **Solution**: Added a global CSS rule to offset scroll position for anchor targets:
+
+  html {
+  scroll-padding-top: 55px;
+  }
+
+#### 3. 🔸 Low contrast in hero subtitles
+
+Lighthouse flagged low contrast ratios in some headings and subtitles.
+
+- **Solution**: The text color was adjusted to meet WCAG AA accessibility standards.
+
+**Before fix:**  
+![Overlap Issue](docs/screenshots/subheading.png)
+
+**After fix:**  
+![Fixed with Padding](docs/screenshots/subheadingfixed.png)
+
+---
+
+## 🎨 UX and Colour Accessibility
+
+To ensure a **positive user experience (UX)**, special attention was given to choosing appropriate and accessible colour combinations throughout the website.
+
+During testing, I used a contrast checker to evaluate the **readability and visual clarity** of text elements, particularly in the hero section. My goal was to meet **WCAG AA standards** for accessibility and provide a comfortable experience for users with different levels of vision.
+
+### 🎯 Contrast Colour Example
+
+- Text color: `#2E5E4F`
+- Background color: `#F6F2EB`
+- Contrast Ratio: **6.65**
+- Verdict: _Good_ for large text, but _only fair_ for smaller text.
+
+![Initial Contrast](docs/screenshots/UX.png)
+
+- Text color: `#4A4A4A`
+- Background color: `#F6F2EB`
+- Contrast Ratio: **7.94**
+- Verdict: _Very Good_ – accessible for all text sizes.
+
+![Improved Contrast](docs/screenshots/UX.2.png)
+
+This ensures that headings and subtitles are clear and legible across various devices and lighting conditions, enhancing both **usability** and **accessibility**.
