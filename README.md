@@ -148,7 +148,7 @@ The layout adapts correctly on all screen sizes and resolutions. Font sizes, spa
 
 Lighthouse tests were run on both mobile and desktop views. After optimisation, the following results were achieved:
 
-- **Performance**: 100 (desktop)
+- **Performance**: 98 (desktop)
 - **Accessibility**: 85
 - **Best Practices**: 81
 - **SEO**: 100
