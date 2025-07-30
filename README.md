@@ -122,6 +122,30 @@ It’s intended to guide users toward professional support options in times of e
 - **Soothing visual style** – Gentle colours and rounded elements help reduce stress and promote calm.
 - **Accessible structure** – Clear headings, semantic HTML, and logical reading order improve usability for all users, including those using screen readers.
 
+## 🧩 Wireframes
+
+Before starting the development process, I planned the layout and structure of the website using wireframes. This helped me visualise the user experience and ensure a clear content hierarchy across different screen sizes.
+
+To create the wireframes, I used two tools:
+
+- **Canva** – for the **mobile wireframe**, as it allowed me to focus on the visual feel of the layout using modern, stylised elements and mock mobile devices.
+- **Balsamiq** – for the **tablet** and **desktop wireframes**, as it provided a quick and effective way to sketch low-fidelity layouts and plan the structure in a more schematic way.
+
+Creating wireframes for all major viewports helped me design a responsive, accessible, and user-friendly interface.
+
+### 📱 Mobile Wireframe
+
+![Mobile Wireframe](docs/screenshots/Wireframe_mobile.png)
+
+---
+
+### 🖥️ Tablet and Desktop Wireframes
+
+<p align="center">
+  <img src="docs/screenshots/tablet.wireframe.png" width="45%" alt="Tablet Wireframe"/>
+  <img src="docs/screenshots/Wireframe_desktop.png" width="45%" alt="Desktop Wireframe"/>
+</p>
+
 ## 🧪 Testing
 
 Thorough testing was conducted throughout the development process to ensure the website functions smoothly, is visually consistent across devices, and supports the user’s mental wellness journey in an intuitive and accessible way.
